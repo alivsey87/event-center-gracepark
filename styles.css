@@ -2,22 +2,15 @@ html,
 body {
     margin: 0;
     padding: 0;
+    /* needed the following code for background image to
+    work properly. Found the "overflow-x" on a forum */
     width: 100%;
     height: 100%;
     overflow-x: hidden !important;
 }
 
-ul {
-    list-style-type: none;
-}
 
-.nav-items a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 90%;
-    transition: color 0.2s;
-}
+/* All content organized in a big flex-box */
 
 .main-container {
     display: flex;
@@ -31,6 +24,9 @@ ul {
     position: relative;
 }
 
+
+/* Announcement Bar classes */
+
 .announcement-bar {
     display: flex;
     justify-content: center;
@@ -43,10 +39,49 @@ ul {
     animation: blinkFade 3s infinite;
 }
 
+
+/* Navigation Bar classes */
+
+.nav-container {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items {
+    display: grid;
+    list-style-type: none;
+    width: 50%;
+    margin-right: 2%;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    transition: color 0.2s;
+}
+
+.nav-items a:hover {
+    color: rgba(200, 200, 255, 0.7);
+}
+
+
+/* Home page classes */
+
 .main-content {
     display: flex;
     flex-direction: column;
 }
+
+
+/* Hero Image classes */
 
 .hero-logo {
     display: flex;
@@ -68,26 +103,8 @@ ul {
 }
 
 
-.nav-container {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%);
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-items {
-    display: grid;
-    width: 50%;
-    margin-right: 2%;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-}
-
-.nav-items a:hover {
-    color: rgba(200, 200, 255, 0.7);
-}
+/* Contact Us classes */
 
 #contact-header {
     margin: auto;
@@ -149,6 +166,9 @@ ul {
     border-color:rgba(150, 200, 255, 1);
 }
 
+
+/* Footer classes */
+
 .footer-container {
     display: flex;
     justify-content: center;
@@ -162,6 +182,9 @@ ul {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Media queries */
 
 @media screen and (max-width: 950px) {
     .nav-container {
@@ -185,6 +208,9 @@ ul {
     }
 
 }
+
+
+/* Animations */
 
 @keyframes blinkFade {
     0% {opacity: 1.0;}
