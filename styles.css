@@ -102,20 +102,26 @@ ul {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     width: 50%;
-    height: 50%;
+    height: 40%;
     margin: auto;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 10px;
     height: 100%;
     margin: 5% 10%;
 }
 
+.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
 .personal {
-    width: 250px;
+    line-height: 1.5rem;
+    width: 47%;
     align-self: center;
 }
 
