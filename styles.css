@@ -1,5 +1,5 @@
-html,
-body {
+
+html, body {
     margin: 0;
     padding: 0;
     /* needed the following code for background image to
@@ -17,11 +17,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("Images/concert.jpg");
-    height: 100%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    height: 100vh;
+    background-position-x: 80%; /* keep "singing man" in viewport */
 }
 
 
