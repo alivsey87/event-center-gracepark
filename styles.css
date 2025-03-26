@@ -121,6 +121,61 @@ html, body {
 }
 
 
+
+/* Event classes */
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80%;
+    margin: 20% auto;
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+#j-camp {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#winans {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+#k-country {
+    width: 250px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.event-container h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.event-container h3 {
+    font-weight: 500;
+}
+
+
 /* Menu Classes */
 
 .main-menu {
@@ -175,7 +230,9 @@ html, body {
 }
 
 .main-location-content img {
+    opacity: 0.7;
     width: 50%;
+    padding-top: 50px;
 }
 
 
@@ -191,7 +248,7 @@ html, body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     width: 50%;
     height: 40%;
