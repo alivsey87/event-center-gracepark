@@ -102,12 +102,12 @@ body {
 
 .transparency-container {
     mask-image: linear-gradient(to right, black 40%, transparent);
-  }
+    width: 70%;
+}
 
 .feat-image {
-    height: 700px;
     object-fit: none;
-    object-position: 70%;
+    object-position: -320px -130px;
 }
 
 .feat-info {
