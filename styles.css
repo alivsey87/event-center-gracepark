@@ -5,8 +5,13 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     /* needed the following code for background image to
     work properly. Found the "overflow-x" on a forum */
+    background-image: url("Images/concert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 80%; /* keep "singing man" in viewport */
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden !important;
 }
 
@@ -17,12 +22,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("Images/concert.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 140vh;
-    background-position-x: 80%; /* keep "singing man" in viewport */
+    height: 100%;
 }
 
 
@@ -96,6 +96,7 @@ html, body {
     color: white;
     padding: 70px 5px;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 
@@ -120,11 +121,50 @@ html, body {
 }
 
 
+/* Menu Classes */
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 40%;
+    margin: 20% auto;
+}
+
+.main-menu h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-menu table {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+    width: 100%;
+}
+
+.main-menu th {
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 2rem;
+    font-size: larger;
+    border: 1px solid white;
+}
+
+.main-menu td {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.main-menu tr:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
 
 /* Contact Us classes */
 
 #contact-header {
-    margin: auto;
+    margin: 200px auto 50px auto;
     font-weight: lighter;
     color: white;
 }
@@ -136,7 +176,7 @@ html, body {
     border-radius: 10px;
     width: 50%;
     height: 40%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .contact-form form {
@@ -164,6 +204,7 @@ html, body {
     border: white 2px solid;
     width: 150px;
     align-self: center;
+    margin-top: 20px;
     padding: 10px 0px;
     transition: all 0.2s;
 }
@@ -188,14 +229,16 @@ html, body {
 .footer-container {
     display: flex;
     justify-content: center;
-    align-items: end;
+    justify-self: flex-end;
     height: 20%;
     background:
-        linear-gradient(to top, rgba(0, 5, 5, 1) 30%, rgba(0, 5, 5, 0));
+        linear-gradient(to top, rgba(0, 5, 5, 1) 50%, rgba(0, 5, 5, 0));
+    padding-top: 50px;    
 }
 
 .footer-container p {
     color: white;
+    margin: auto;
 }
 
 
