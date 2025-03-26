@@ -147,7 +147,8 @@ html, body {
     background-color: rgba(0, 0, 0, 0.6);
     line-height: 2rem;
     font-size: larger;
-    border: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .main-menu td {
@@ -156,7 +157,25 @@ html, body {
 }
 
 .main-menu tr:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* Location classes */
+
+.main-location-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 60%;
+    padding: 50px 0px;
+    margin: 200px auto;
+}
+
+.main-location-content img {
+    width: 50%;
 }
 
 
@@ -210,7 +229,7 @@ html, body {
 }
 
 .sub-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
     box-shadow: 0px 3px 15px 3px #030303;
     cursor: pointer;
