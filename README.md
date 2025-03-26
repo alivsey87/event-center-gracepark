@@ -1,6 +1,20 @@
 # EVENT CENTER PROJECT: Grace Park
 
 
+## TABLE OF CONTENTS
+
+1.[Background](#1-background)
+
+2.[Home Page](#2-home-page)
+
+3.[Events](#3-events)
+
+4.[Menu](#4-menu)
+
+5.[Location](#5-location)
+
+6.[Contact Us](#6-contact-us)
+
 ## 1. Background
 
 I decided to have an image of a concert be the background for the entire site, but also be a part of the hero image. Through a LOT of trial and error (background-* property experimenting), I figured out how to make the background image stay fixed during scrolling and positioned it to allow the performer in the photo be sort of another part of the hero image.
@@ -10,11 +24,11 @@ I decided to have an image of a concert be the background for the entire site, b
 
 ## 2. Home Page
 
-### BODY
+### Body
 
 Every page is contained in a flex-box container under the "main-container" class. Will only include this "Body" section once on the README since it applies to all pages.
 
-### HEADER
+### Header
 
 Header includes the following:
 
@@ -28,7 +42,7 @@ Header includes the following:
 
 Will only include this "Header" section once on the README since it applies to all pages.
 
-### MAIN
+### Main
 
 Main content holds:
 
@@ -64,7 +78,32 @@ Main flex-box container that holds:
 - #### EVENT CARDS
   - Each card is a flex-box and has an image item with it's own id for specific styling since each image has a different pixel size and I had to fit each into a 250 X 220 box. The other two items are simple `<h3>` items for event info.
 
-  ---
-  ---
+---
+---
 
-  ## 4. MENU
+## 4. MENU
+
+### Main
+
+A main flex-box container containing a table with 3 `<th>` elements for the "Food" "Snacks" and "Drinks."
+
+---
+---
+
+## 5. LOCATION
+
+### Main
+
+A simple `<div>` with a bunch of `<p>` elements to describe the location and hours. Included an image of a Google Map as well.
+
+---
+---
+
+## 6. CONTACT US
+
+### Main
+
+A flex-box (probably could've just used a normal `<div>` here) that includes a another flex-box for the form. Separated the text inputs, textarea and submit input into their own items in the flex-box. Added a nice bit of styling to the Submit button.
+
+
+[back to top](#event-center-project-grace-park)
