@@ -1,4 +1,12 @@
 # EVENT CENTER PROJECT: Grace Park
+---
+---
+
+#### For this project, I decided to make a website for a center called Grace Park that hosts concerts for Christian music artists! Hopefully this README explains a lot of what is going on in the coding and it is organized.
+
+---
+---
+---
 
 
 ## TABLE OF CONTENTS
