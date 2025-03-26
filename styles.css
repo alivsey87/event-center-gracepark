@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     /* needed the following code for background image to
     work properly. Found the "overflow-x" on a forum */
     width: 100%;
@@ -19,7 +20,8 @@ html, body {
     background-image: url("Images/concert.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 120vh;
     background-position-x: 80%; /* keep "singing man" in viewport */
 }
 
@@ -31,7 +33,6 @@ html, body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .announcement-bar p {
@@ -62,7 +63,6 @@ html, body {
 .nav-items a {
     color: white;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 90%;
     transition: color 0.2s;
 }
@@ -79,6 +79,14 @@ html, body {
     flex-direction: column;
 }
 
+.about-container {
+    width: 100%;
+    text-align: center;
+    background-color: #030303;
+    color: white;
+    padding: 50px 5px;
+}
+
 
 /* Hero Image classes */
 
@@ -92,7 +100,6 @@ html, body {
 
 .hero-logo h1 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
     margin-top: 50px;
 }
@@ -107,7 +114,6 @@ html, body {
 
 #contact-header {
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     color: white;
 }
@@ -179,7 +185,6 @@ html, body {
 
 .footer-container p {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
