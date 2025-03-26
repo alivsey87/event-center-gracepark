@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +9,8 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position-x: 80%; /* keep "singing man" in viewport */
+    background-position-x: 80%;
+    /* keep "singing man" in viewport */
     width: 100%;
     height: 100vh;
     overflow-x: hidden !important;
@@ -89,14 +90,58 @@ html, body {
     flex-direction: column;
 }
 
-.about-container {
+.featured-event {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
+    height: 450px;
+    margin-top: 15%;
+}
+
+.transparency-container {
+    mask-image: linear-gradient(to right, black 40%, transparent);
+  }
+
+.feat-image {
+    height: 700px;
+    object-fit: none;
+    object-position: 70%;
+}
+
+.feat-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 30%;
+}
+
+.more-events {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.more-events:hover {
+    background-color: rgba(220, 220, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.about-container {
+    width: 60%;
     text-align: center;
     background: linear-gradient(rgba(0, 5, 5, 1), rgba(0, 5, 5, 0.5), rgba(0, 5, 5, 1));
     color: white;
+    border-radius: 10px;
     padding: 70px 5px;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin: 150px auto;
 }
 
 
@@ -128,7 +173,7 @@ html, body {
     display: flex;
     flex-direction: column;
     color: white;
-    width: 80%;
+    width: 60%;
     margin: 20% auto;
 }
 
@@ -168,12 +213,13 @@ html, body {
 
 .event-container h1 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .event-container h3 {
     font-weight: 500;
 }
+
 
 
 /* Menu Classes */
@@ -183,7 +229,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     color: white;
-    width: 40%;
+    width: 60%;
     margin: 20% auto;
 }
 
@@ -250,7 +296,7 @@ html, body {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
     height: 40%;
     margin: 0 auto;
 }
@@ -296,7 +342,7 @@ html, body {
     background-color: rgba(150, 200, 255, 0.6);
     transform: none;
     box-shadow: none;
-    border-color:rgba(150, 200, 255, 1);
+    border-color: rgba(150, 200, 255, 1);
 }
 
 
@@ -309,7 +355,7 @@ html, body {
     height: 20%;
     background:
         linear-gradient(to top, rgba(0, 5, 5, 1) 50%, rgba(0, 5, 5, 0));
-    padding-top: 50px;    
+    padding-top: 50px;
 }
 
 .footer-container p {
@@ -347,7 +393,15 @@ html, body {
 /* Animations */
 
 @keyframes blinkFade {
-    0% {opacity: 1.0;}
-    50% {opacity: 0.1;}
-    100% {opacity: 1.0;}
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
 }
