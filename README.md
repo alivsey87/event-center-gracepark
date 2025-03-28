@@ -11,17 +11,19 @@
 
 ## TABLE OF CONTENTS
 
-1.[Background](#1-background)
+1. [Background](#1-background)
 
-2.[Home Page](#2-home-page)
+2. [Home Page](#2-home-page)
 
-3.[Events](#3-events)
+3. [Events](#3-events)
 
-4.[Menu](#4-menu)
+4. [Menu](#4-menu)
 
-5.[Location](#5-location)
+5. [Location](#5-location)
 
-6.[Contact Us](#6-contact-us)
+6. [Contact Us](#6-contact-us)
+
+7. [Miscellaneous CSS](#7-miscellaneous-css)
 
 ## 1. Background
 
