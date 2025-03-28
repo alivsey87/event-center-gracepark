@@ -34,7 +34,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
+
 
 
 /* Announcement Bar classes */
@@ -49,6 +51,7 @@ body {
 .announcement-bar p {
     animation: blinkFade 3s infinite;
 }
+
 
 
 /* Navigation Bar classes */
@@ -391,6 +394,50 @@ body {
 
     .hero-logo img {
         width: 70%
+    }
+
+    .featured-event {
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    .transparency-container {
+        mask-image: linear-gradient(to right, black 90%, transparent);
+        width: 70%;
+        height: 100%;
+    }
+
+    .feat-info {
+        align-self: center;
+        place-items: center;
+    }
+
+    .about-container {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .announcement-bar p {
+        font-size: x-small;
+    }
+
+    .nav-items {
+        padding: 0;
+    }
+
+    .nav-items a {
+        font-size: x-small;
+    }
+
+    .hero-logo h1 {
+        font-size: 70%;
+    }
+
+    .featured-event {
+        flex-direction: column;
+        margin-bottom: 60%;
     }
 
 }
