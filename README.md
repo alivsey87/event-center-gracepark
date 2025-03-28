@@ -62,7 +62,7 @@ Main content holds:
 
   - Used a flex-box container to hold a main featured image and an "info" block showcasing one of the events, including a button/link to the Events page. There was a good amount of experimenting on the image container and image to get the photo to fade out to the right. This:
     ```css
-         mask-image: linear-gradient(to right, black 40%, transparent 70%);
+    mask-image: linear-gradient(to right, black 40%, transparent 70%);
      ```
     accomplished that!
 
@@ -113,5 +113,35 @@ A simple `<div>` with a bunch of `<p>` elements to describe the location and hou
 
 A flex-box (probably could've just used a normal `<div>` here) that includes a another flex-box for the form. Separated the text inputs, textarea and submit input into their own items in the flex-box. Added a nice bit of styling to the Submit button.
 
+---
+---
+
+## 7. MISCELLANEOUS CSS
+
+### Theme
+
+The visual theme of the website is centered around the background image of the performer on stage. Because of the colors, I decided to use transparent black elements. The folowing color is used *very* often:
+```css
+background-color: rgba(0, 0, 0, 0.6);
+```
+The home page was *TRICKY* for me. I wanted to have the featured section have an image that blended into the background color (the code mentioned [here](#featured-event)) and I kept running into issues sizing the image and cropping it correctly. After some trial and error I came up with this:
+```css
+.feat-image {
+    object-fit: none;
+    object-position: -320px -130px;
+}
+```
+The image itself is rather large and I discovered that I had to set negative value positions to get it just right.
+
+I also decided to make the font consistent throughout with this code:
+```css
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 0.05rem;
+```
+Also, setting the color to white.
+
+### Media Queries
+
+I feel like I had to create way too many variations of classes for the viewport sizes, *particularly* the 950px size. Something to consider for future projects.
 
 [back to top](#event-center-project-grace-park)
